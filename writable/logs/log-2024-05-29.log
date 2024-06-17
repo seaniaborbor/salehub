@@ -1,0 +1,180 @@
+INFO - 2024-05-29 08:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-29 08:16:07 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\admin\index.php on line 24.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+ 4 APPPATH\Controllers\AnalyticController.php(99): view('admin/index', [])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-29 08:16:07 --> [Caused by] ErrorException: Undefined variable $products
+in APPPATH\Views\admin\index.php on line 24.
+ 1 APPPATH\Views\admin\index.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\index.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\AnalyticController.php(99): view('admin/index', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-29 08:17:00 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\admin\index.php on line 24.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+ 4 APPPATH\Controllers\AnalyticController.php(99): view('admin/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-29 08:17:00 --> [Caused by] ErrorException: Undefined variable $products
+in APPPATH\Views\admin\index.php on line 24.
+ 1 APPPATH\Views\admin\index.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\index.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\AnalyticController.php(99): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-29 08:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 08:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-29 09:26:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/analytic.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/analytic.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/analytic', [], true)
+ 3 APPPATH\Controllers\AnalyticController.php(89): view('admin/analytic', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-29 09:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-29 09:30:31 --> ValueError: Path cannot be empty
+in APPPATH\Views\admin\analytics.php on line 5.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/analytics', [], true)
+ 4 APPPATH\Controllers\AnalyticController.php(91): view('admin/analytics', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-29 09:30:31 --> [Caused by] ErrorException: Undefined variable $view_to_render
+in APPPATH\Views\admin\analytics.php on line 5.
+ 1 APPPATH\Views\admin\analytics.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $view_to_render', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php', 5)
+ 2 APPPATH\Views\admin\analytics.php(5): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/analytics', [], true)
+ 6 APPPATH\Controllers\AnalyticController.php(91): view('admin/analytics', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-29 09:31:40 --> ValueError: Path cannot be empty
+in APPPATH\Views\admin\analytics.php on line 5.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/analytics', [], true)
+ 4 APPPATH\Controllers\AnalyticController.php(91): view('admin/analytics', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-29 09:31:40 --> [Caused by] ErrorException: Undefined variable $view_to_render
+in APPPATH\Views\admin\analytics.php on line 5.
+ 1 APPPATH\Views\admin\analytics.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $view_to_render', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php', 5)
+ 2 APPPATH\Views\admin\analytics.php(5): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/analytics', [], true)
+ 6 APPPATH\Controllers\AnalyticController.php(91): view('admin/analytics', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-29 09:34:22 --> ErrorException: Undefined variable $view_to_render
+in APPPATH\Views\admin\analytics.php on line 5.
+ 1 APPPATH\Views\admin\analytics.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $view_to_render', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/analytics', [], true)
+ 5 APPPATH\Controllers\AnalyticController.php(91): view('admin/analytics', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-29 09:35:51 --> ErrorException: Undefined variable $view_to_render
+in APPPATH\Views\admin\analytics.php on line 5.
+ 1 APPPATH\Views\admin\analytics.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $view_to_render', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/analytics', [], true)
+ 5 APPPATH\Controllers\AnalyticController.php(91): view('admin/analytics', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-29 09:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-29 09:50:40 --> ErrorException: include(admin/common/analytic_form.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\analytics.php on line 5.
+ 1 APPPATH\Views\admin\analytics.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/common/analytic_form.php): Failed to open stream: No such file or directory', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php', 5)
+ 2 APPPATH\Views\admin\analytics.php(5): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\analytics.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/analytics', [], true)
+ 6 APPPATH\Controllers\AnalyticController.php(92): view('admin/analytics', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-29 09:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 10:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 10:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 10:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 10:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 10:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 10:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-29 10:40:33 --> ErrorException: Undefined variable $CustomerModel
+in APPPATH\Controllers\AnalyticController.php on line 77.
+ 1 APPPATH\Controllers\AnalyticController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $CustomerModel', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\AnalyticController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-29 10:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 10:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-29 10:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

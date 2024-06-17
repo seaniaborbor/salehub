@@ -1,0 +1,118 @@
+CRITICAL - 2024-05-02 12:54:20 --> ErrorException: Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-02 12:54:51 --> ErrorException: Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-02 12:57:11 --> ErrorException: Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-02 12:57:17 --> ErrorException: Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-02 13:01:38 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\public\common\product_loader.php on line 21.
+ 1 APPPATH\Views\public\index.php(197): include_once()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('public/index', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('public/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-02 21:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-02 21:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-02 21:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-02 21:19:41 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\public\common\product_loader.php on line 21.
+ 1 APPPATH\Views\public\index.php(197): include_once()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('public/index', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('public/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-02 21:20:01 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\public\common\product_loader.php on line 21.
+ 1 APPPATH\Views\public\index.php(197): include_once()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('public/index', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('public/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-02 22:38:02 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\public\common\product_loader.php on line 15.
+ 1 APPPATH\Views\public\index.php(197): include_once()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('public/index', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('public/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-02 22:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-02 22:46:56 --> ErrorException: Undefined array key "id"
+in APPPATH\Controllers\OrderController.php on line 42.
+ 1 APPPATH\Controllers\OrderController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\OrderController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->add_to_cart('8')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-02 22:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-02 22:57:01 --> ErrorException: Undefined array key "name"
+in APPPATH\Controllers\OrderController.php on line 43.
+ 1 APPPATH\Controllers\OrderController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\OrderController.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->add_to_cart('8')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-02 23:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-02 23:02:04 --> ErrorException: Undefined array key "price"
+in APPPATH\Controllers\OrderController.php on line 44.
+ 1 APPPATH\Controllers\OrderController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\OrderController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->add_to_cart('8')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-02 23:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-02 23:03:23 --> ErrorException: Undefined array key "quantity"
+in APPPATH\Controllers\OrderController.php on line 44.
+ 1 APPPATH\Controllers\OrderController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\OrderController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->add_to_cart('8')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-02 23:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-02 23:04:47 --> ErrorException: Undefined array key "quantity"
+in APPPATH\Controllers\OrderController.php on line 44.
+ 1 APPPATH\Controllers\OrderController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\OrderController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->add_to_cart('8')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-02 23:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-02 23:07:32 --> ErrorException: Undefined array key "quantity"
+in APPPATH\Controllers\OrderController.php on line 44.
+ 1 APPPATH\Controllers\OrderController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\OrderController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->add_to_cart('8')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-02 23:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

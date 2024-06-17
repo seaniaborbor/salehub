@@ -1,0 +1,202 @@
+ERROR - 2024-04-21 22:22:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lilsite`.`products_table`, CONSTRAINT `products_table_prodCategory_foreign` FOREIGN KEY (`prodCategory`) REFERENCES `categories` (`categoryId`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\ProductsController.php(80): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#11 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#14 {main}
+CRITICAL - 2024-04-21 22:22:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`lilsite`.`products_table`, CONSTRAINT `products_table_prodCategory_foreign` FOREIGN KEY (`prodCategory`) REFERENCES `categories` (`categoryId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products_table` (`prodName`, `prodCategory`, `prodPrice`, `prodPic`, `prodAvailabilityStatus`, `prodQty`) VALUES (:prodName:, :prodCategory:, :prodPrice:, :prodPic:, :prodAvailabilityStatus:, :prodQty:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductsController.php(80): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-21 22:22:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`lilsite`.`products_table`, CONSTRAINT `products_table_prodCategory_foreign` FOREIGN KEY (`prodCategory`) REFERENCES `categories` (`categoryId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products_table` (`prodName`, `prodCategory`, `prodPrice`, `prodPic`, `prodAvailabilityStatus`, `prodQty`) VALUES (\'Sloppers\', \'Foot Ware\', \'88\', \'1713738171_9ed662f75b1a03e22fe9.png\', \'out_of_stock\', \'777\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products_table` (`prodName`, `prodCategory`, `prodPrice`, `prodPic`, `prodAvailabilityStatus`, `prodQty`) VALUES (\'Sloppers\', \'Foot Ware\', \'88\', \'1713738171_9ed662f75b1a03e22fe9.png\', \'out_of_stock\', \'777\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products_table` (`prodName`, `prodCategory`, `prodPrice`, `prodPic`, `prodAvailabilityStatus`, `prodQty`) VALUES (:prodName:, :prodCategory:, :prodPrice:, :prodPic:, :prodAvailabilityStatus:, :prodQty:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\ProductsController.php(80): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-21 22:22:51 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lilsite`.`products_table`, CONSTRAINT `products_table_prodCategory_foreign` FOREIGN KEY (`prodCategory`) REFERENCES `categories` (`categoryId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `products_table` (`prodName`, `prodCategory`, `prodPrice`, `prodPic`, `prodAvailabilityStatus`, `prodQty`) VALUES (\'Sloppers\', \'Foot Ware\', \'88\', \'1713738171_9ed662f75b1a03e22fe9.png\', \'out_of_stock\', \'777\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products_table` (`prodName`, `prodCategory`, `prodPrice`, `prodPic`, `prodAvailabilityStatus`, `prodQty`) VALUES (\'Sloppers\', \'Foot Ware\', \'88\', \'1713738171_9ed662f75b1a03e22fe9.png\', \'out_of_stock\', \'777\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products_table` (`prodName`, `prodCategory`, `prodPrice`, `prodPic`, `prodAvailabilityStatus`, `prodQty`) VALUES (\'Sloppers\', \'Foot Ware\', \'88\', \'1713738171_9ed662f75b1a03e22fe9.png\', \'out_of_stock\', \'777\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products_table` (`prodName`, `prodCategory`, `prodPrice`, `prodPic`, `prodAvailabilityStatus`, `prodQty`) VALUES (:prodName:, :prodCategory:, :prodPrice:, :prodPic:, :prodAvailabilityStatus:, :prodQty:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\ProductsController.php(80): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-21 22:54:37 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::getMethid()
+in APPPATH\Controllers\CategoryController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->add_category()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-04-21 22:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-21 22:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-21 22:57:49 --> Error: Class "App\Models\CategoryController" not found
+in APPPATH\Controllers\ProductsController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-04-21 23:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-21 23:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-21 23:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-21 23:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-21 23:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-21 23:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-21 23:29:19 --> CodeIgniter\Validation\Exceptions\ValidationException: "dimensions" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('dimensions')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('prodPic', 'prodPic', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\ProductsController.php(73): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-21 23:30:45 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_width" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_width')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('prodPic', 'prodPic', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\ProductsController.php(77): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-21 23:34:32 --> CodeIgniter\Validation\Exceptions\ValidationException: "image_dimensions" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('image_dimensions')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('prodPic', 'prodPic', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\ProductsController.php(72): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-04-21 23:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-21 23:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-21 23:41:19 --> CodeIgniter\Validation\Exceptions\ValidationException: "min_dims" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_dims')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('prodPic', 'prodPic', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\ProductsController.php(72): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-04-21 23:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-21 23:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-21 23:48:16 --> mysqli_sql_exception: Unknown column 'product.prodCategory' in 'on clause' in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\ProductsController.php(31): CodeIgniter\BaseModel->paginate(6)
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#12 {main}
+CRITICAL - 2024-04-21 23:48:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product.prodCategory' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `product`.`prodCategory`', [], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\ProductsController.php(31): CodeIgniter\BaseModel->paginate(6)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-21 23:48:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product.prodCategory' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `product`.`prodCategory`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `product`.`prodCategory`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `product`.`prodCategory`', [], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\ProductsController.php(31): CodeIgniter\BaseModel->paginate(6)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-21 23:48:16 --> [Caused by] mysqli_sql_exception: Unknown column 'product.prodCategory' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `product`.`prodCategory`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `product`.`prodCategory`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `product`.`prodCategory`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `product`.`prodCategory`', [], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\ProductsController.php(31): CodeIgniter\BaseModel->paginate(6)
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-04-21 23:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-21 23:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

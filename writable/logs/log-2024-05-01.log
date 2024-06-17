@@ -1,0 +1,22 @@
+CRITICAL - 2024-05-01 02:54:30 --> Error: Class "App\Controllers\ProductsModel" not found
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-01 03:01:54 --> ErrorException: Undefined variable $data
+in APPPATH\Views\public\common\product_loader.php on line 21.
+ 1 APPPATH\Views\public\common\product_loader.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\common\\product_loader.php', 21)
+ 2 APPPATH\Views\public\index.php(197): include_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\common\\product_loader.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('public/index', [], true)
+ 6 APPPATH\Controllers\Home.php(30): view('public/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-01 03:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

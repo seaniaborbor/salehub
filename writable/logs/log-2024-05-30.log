@@ -1,0 +1,187 @@
+ERROR - 2024-05-30 01:06:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00' at line 4 in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\AnalyticController.php(68): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-30 01:06:45 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sale_table`
+JOIN `products_table` ON `products_table`.`prodId` = `sale_table`.`_product`
+WHERE `sale_table`.`loggedDate` >= 2024-05-08 00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00', [], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AnalyticController.php(68): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-30 01:06:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sale_table`
+JOIN `products_table` ON `products_table`.`prodId` = `sale_table`.`_product`
+WHERE `sale_table`.`loggedDate` >= 2024-05-08 00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sale_table`
+JOIN `products_table` ON `products_table`.`prodId` = `sale_table`.`_product`
+WHERE `sale_table`.`loggedDate` >= 2024-05-08 00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sale_table`
+JOIN `products_table` ON `products_table`.`prodId` = `sale_table`.`_product`
+WHERE `sale_table`.`loggedDate` >= 2024-05-08 00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00', [], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AnalyticController.php(68): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-30 01:06:45 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `sale_table`
+JOIN `products_table` ON `products_table`.`prodId` = `sale_table`.`_product`
+WHERE `sale_table`.`loggedDate` >= 2024-05-08 00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sale_table`
+JOIN `products_table` ON `products_table`.`prodId` = `sale_table`.`_product`
+WHERE `sale_table`.`loggedDate` >= 2024-05-08 00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sale_table`
+JOIN `products_table` ON `products_table`.`prodId` = `sale_table`.`_product`
+WHERE `sale_table`.`loggedDate` >= 2024-05-08 00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sale_table`
+JOIN `products_table` ON `products_table`.`prodId` = `sale_table`.`_product`
+WHERE `sale_table`.`loggedDate` >= 2024-05-08 00:00:00
+AND `sale_table`.`loggedDate` <= 2024-05-30 00:00:00', [], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AnalyticController.php(68): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+ERROR - 2024-05-30 01:12:08 --> mysqli_sql_exception: Unknown column 'loggedDate' in 'where clause' in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `custome...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\AnalyticController.php(88): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-30 01:12:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'loggedDate' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `loggedDate` >= :loggedDate:
+AND `loggedDate` <= :loggedDate.1:
+GROUP BY `customer_table`.`orderCode`', [...], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AnalyticController.php(88): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-30 01:12:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'loggedDate' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `loggedDate` >= \'2024-05-08 00:00:00\'
+AND `loggedDate` <= \'2024-05-30 00:00:00\'
+GROUP BY `customer_table`.`orderCode`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `loggedDate` >= \'2024-05-08 00:00:00\'
+AND `loggedDate` <= \'2024-05-30 00:00:00\'
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `loggedDate` >= :loggedDate:
+AND `loggedDate` <= :loggedDate.1:
+GROUP BY `customer_table`.`orderCode`', [...], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AnalyticController.php(88): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-30 01:12:08 --> [Caused by] mysqli_sql_exception: Unknown column 'loggedDate' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `loggedDate` >= \'2024-05-08 00:00:00\'
+AND `loggedDate` <= \'2024-05-30 00:00:00\'
+GROUP BY `customer_table`.`orderCode`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `loggedDate` >= \'2024-05-08 00:00:00\'
+AND `loggedDate` <= \'2024-05-30 00:00:00\'
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `loggedDate` >= \'2024-05-08 00:00:00\'
+AND `loggedDate` <= \'2024-05-30 00:00:00\'
+GROUP BY `customer_table`.`orderCode`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `loggedDate` >= :loggedDate:
+AND `loggedDate` <= :loggedDate.1:
+GROUP BY `customer_table`.`orderCode`', [...], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AnalyticController.php(88): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AnalyticController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-30 01:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 01:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 01:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 01:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 01:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

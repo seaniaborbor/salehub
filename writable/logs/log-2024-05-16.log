@@ -1,0 +1,191 @@
+INFO - 2024-05-16 00:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 00:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-16 08:27:18 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+in APPPATH\Controllers\OrderController.php on line 39.
+ 1 APPPATH\Controllers\OrderController.php(39): count(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-16 08:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-16 08:33:11 --> ErrorException: Undefined property: stdClass::$prodName
+in APPPATH\Views\admin\orders.php on line 33.
+ 1 APPPATH\Views\admin\orders.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$prodName', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orders.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orders.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/orders', [], true)
+ 5 APPPATH\Controllers\OrderController.php(42): view('admin/orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+ERROR - 2024-05-16 08:35:22 --> mysqli_sql_exception: Table 'lilsite.product_table' doesn't exist in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `custome...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\OrderController.php(37): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\OrderController->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-16 08:35:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'lilsite.product_table' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `product_table` ON `order`.`productId` = `product_table`.`prodId`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OrderController.php(37): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-16 08:35:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'lilsite.product_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `product_table` ON `order`.`productId` = `product_table`.`prodId`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+GROUP BY `customer_table`.`orderCode`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `product_table` ON `order`.`productId` = `product_table`.`prodId`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `product_table` ON `order`.`productId` = `product_table`.`prodId`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OrderController.php(37): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-16 08:35:22 --> [Caused by] mysqli_sql_exception: Table 'lilsite.product_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `product_table` ON `order`.`productId` = `product_table`.`prodId`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+GROUP BY `customer_table`.`orderCode`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `product_table` ON `order`.`productId` = `product_table`.`prodId`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `product_table` ON `order`.`productId` = `product_table`.`prodId`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+GROUP BY `customer_table`.`orderCode`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `product_table` ON `order`.`productId` = `product_table`.`prodId`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OrderController.php(37): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-16 08:36:04 --> ErrorException: Undefined property: stdClass::$prodName
+in APPPATH\Views\admin\orders.php on line 33.
+ 1 APPPATH\Views\admin\orders.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$prodName', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orders.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orders.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/orders', [], true)
+ 5 APPPATH\Controllers\OrderController.php(43): view('admin/orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-16 08:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 08:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 09:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 09:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 09:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 15:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

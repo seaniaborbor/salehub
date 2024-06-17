@@ -1,0 +1,117 @@
+CRITICAL - 2024-04-09 12:25:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/admin', [], true)
+ 3 APPPATH\Controllers\DashboardController.php(14): view('admin/admin', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\weedkeystroke\\Desktop\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-09 12:26:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/admin', [], true)
+ 3 APPPATH\Controllers\DashboardController.php(14): view('admin/admin', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\weedkeystroke\\Desktop\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-09 12:27:18 --> ErrorException: Undefined property: CodeIgniter\View\View::$render
+in APPPATH\Views\admin\common\layout.php on line 74.
+ 1 APPPATH\Views\admin\common\layout.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$render', 'C:\\Users\\weedkeystroke\\Desktop\\lilapp\\app\\Views\\admin\\common\\layout.php', 74, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\weedkeystroke\\Desktop\\lilapp\\app\\Views\\admin\\common\\layout.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('admin/common/layout', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+ 6 APPPATH\Controllers\DashboardController.php(14): view('admin/index', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\weedkeystroke\\Desktop\\lilapp\\public\\index.php')
+ERROR - 2024-04-09 13:19:52 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'lilsite' in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'lilsite', 3306, '', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'lilsite' in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2024-04-09 13:39:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/product.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/product.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/product.php', [], true)
+ 3 APPPATH\Controllers\ProductsController.php(15): view('admin/product.php', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-09 14:01:58 --> ErrorException: include(forms/product_form.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\products.php on line 11.
+ 1 APPPATH\Views\admin\products.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(forms/product_form.php): Failed to open stream: No such file or directory', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\products.php', 11)
+ 2 APPPATH\Views\admin\products.php(11): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\products.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/products.php', [], true)
+ 6 APPPATH\Controllers\ProductsController.php(15): view('admin/products.php', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-09 14:02:19 --> ErrorException: include(admin/forms/product_form.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\products.php on line 11.
+ 1 APPPATH\Views\admin\products.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/forms/product_form.php): Failed to open stream: No such file or directory', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\products.php', 11)
+ 2 APPPATH\Views\admin\products.php(11): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\products.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/products.php', [], true)
+ 6 APPPATH\Controllers\ProductsController.php(15): view('admin/products.php', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-09 14:02:56 --> ErrorException: include(admin/forms/add_product_form.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\products.php on line 11.
+ 1 APPPATH\Views\admin\products.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/forms/add_product_form.php): Failed to open stream: No such file or directory', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\products.php', 11)
+ 2 APPPATH\Views\admin\products.php(11): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\products.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/products.php', [], true)
+ 6 APPPATH\Controllers\ProductsController.php(15): view('admin/products.php', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-04-09 15:18:24 --> Error: Call to undefined method App\Controllers\ProductsController::validte()
+in APPPATH\Controllers\ProductsController.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProductsController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')

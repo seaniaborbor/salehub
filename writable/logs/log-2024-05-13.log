@@ -1,0 +1,53 @@
+ERROR - 2024-05-13 16:20:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'lilsite', 3306, '', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\Home.php(22): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\Home.php(22): CodeIgniter\Model->__call('get', Array)
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#10 {main}
+CRITICAL - 2024-05-13 16:20:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `products_table`.`prodCategory`
+WHERE `products_table`.`prodAvailabilityStatus` = :products_table.prodAvailabilityStatus:
+ORDER BY `products_table`.`prodId` DESC
+ LIMIT 9', [...], false)
+ 3 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(22): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-13 16:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 16:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 16:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 16:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 16:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 16:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 16:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 16:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

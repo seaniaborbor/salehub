@@ -1,0 +1,42 @@
+ERROR - 2024-03-19 01:24:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\weedkeystroke\Desktop\lilapp\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\weedkeystroke\Desktop\lilapp\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\weedkeystroke\Desktop\lilapp\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\weedkeystroke\Desktop\lilapp\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\weedkeystroke\Desktop\lilapp\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\weedkeystroke\Desktop\lilapp\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\weedkeystroke\Desktop\lilapp\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\weedkeystroke\Desktop\lilapp\spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2024-03-19 01:26:25 --> mysqli_sql_exception: Can't create table `lilsite`.`products_table` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\Users\weedkeystroke\Desktop\lilapp\app\Database\Migrations\2024-03-19-010324_CreateProductsTable.php(52): CodeIgniter\Database\Forge->createTable('products_table')
+#5 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MigrationRunner.php(865): App\Database\Migrations\CreateProductsTable->up()
+#6 C:\Users\weedkeystroke\Desktop\lilapp\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\weedkeystroke\Desktop\lilapp\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\weedkeystroke\Desktop\lilapp\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\weedkeystroke\Desktop\lilapp\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\weedkeystroke\Desktop\lilapp\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}

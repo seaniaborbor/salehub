@@ -1,0 +1,437 @@
+ERROR - 2024-06-16 13:35:52 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'lilsite', 3306, '', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\Home.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\Home.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-06-16 13:35:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_regions`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+ERROR - 2024-06-16 13:35:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'lilsite', 3306, '', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\Home.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\Home.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-06-16 13:35:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_regions`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 13:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 13:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 13:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 13:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 13:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 13:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 14:15:04 --> ErrorException: Undefined variable $delivery_db
+in APPPATH\Controllers\AdminController.php on line 164.
+ 1 APPPATH\Controllers\AdminController.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $delivery_db', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\AdminController.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->profile('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 14:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-16 14:18:55 --> mysqli_sql_exception: Duplicate column name 'id' in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\AdminController.php(174): CodeIgniter\Model->countAllResults()
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\AdminController->profile('1')
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-06-16 14:18:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'id'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `agent_assignments`
+JOIN `order` ON `order`.`orderCode` = `agent_assignments`.`order_code`
+JOIN `customer_table` ON `customer_table`.`orderCode` = `order`.`orderCode`
+WHERE `agent_assignments`.`agent_id` = :agent_assignments.agent_id:
+AND `agent_assignments`.`isDeliver` = :agent_assignments.isDeliver:
+GROUP BY `agent_assignments`.`order_code`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AdminController.php(174): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->profile('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-06-16 14:18:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `agent_assignments`
+JOIN `order` ON `order`.`orderCode` = `agent_assignments`.`order_code`
+JOIN `customer_table` ON `customer_table`.`orderCode` = `order`.`orderCode`
+WHERE `agent_assignments`.`agent_id` = \'1\'
+AND `agent_assignments`.`isDeliver` = 0
+GROUP BY `agent_assignments`.`order_code`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `agent_assignments`
+JOIN `order` ON `order`.`orderCode` = `agent_assignments`.`order_code`
+JOIN `customer_table` ON `customer_table`.`orderCode` = `order`.`orderCode`
+WHERE `agent_assignments`.`agent_id` = \'1\'
+AND `agent_assignments`.`isDeliver` = 0
+GROUP BY `agent_assignments`.`order_code`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `agent_assignments`
+JOIN `order` ON `order`.`orderCode` = `agent_assignments`.`order_code`
+JOIN `customer_table` ON `customer_table`.`orderCode` = `order`.`orderCode`
+WHERE `agent_assignments`.`agent_id` = :agent_assignments.agent_id:
+AND `agent_assignments`.`isDeliver` = :agent_assignments.isDeliver:
+GROUP BY `agent_assignments`.`order_code`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AdminController.php(174): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->profile('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-06-16 14:18:55 --> [Caused by] mysqli_sql_exception: Duplicate column name 'id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `agent_assignments`
+JOIN `order` ON `order`.`orderCode` = `agent_assignments`.`order_code`
+JOIN `customer_table` ON `customer_table`.`orderCode` = `order`.`orderCode`
+WHERE `agent_assignments`.`agent_id` = \'1\'
+AND `agent_assignments`.`isDeliver` = 0
+GROUP BY `agent_assignments`.`order_code`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `agent_assignments`
+JOIN `order` ON `order`.`orderCode` = `agent_assignments`.`order_code`
+JOIN `customer_table` ON `customer_table`.`orderCode` = `order`.`orderCode`
+WHERE `agent_assignments`.`agent_id` = \'1\'
+AND `agent_assignments`.`isDeliver` = 0
+GROUP BY `agent_assignments`.`order_code`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `agent_assignments`
+JOIN `order` ON `order`.`orderCode` = `agent_assignments`.`order_code`
+JOIN `customer_table` ON `customer_table`.`orderCode` = `order`.`orderCode`
+WHERE `agent_assignments`.`agent_id` = \'1\'
+AND `agent_assignments`.`isDeliver` = 0
+GROUP BY `agent_assignments`.`order_code`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `agent_assignments`
+JOIN `order` ON `order`.`orderCode` = `agent_assignments`.`order_code`
+JOIN `customer_table` ON `customer_table`.`orderCode` = `order`.`orderCode`
+WHERE `agent_assignments`.`agent_id` = :agent_assignments.agent_id:
+AND `agent_assignments`.`isDeliver` = :agent_assignments.isDeliver:
+GROUP BY `agent_assignments`.`order_code`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AdminController.php(174): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->profile('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 14:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 14:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:09:56 --> Error: Class "App\Controllers\DeliveryModel" not found
+in APPPATH\Controllers\OrderController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 18:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:10:36 --> ErrorException: Undefined variable $order_code
+in APPPATH\Controllers\OrderController.php on line 51.
+ 1 APPPATH\Controllers\OrderController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_code', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\OrderController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 18:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:11:22 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\OrderController.php(51): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 18:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:46:05 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\OrderController.php(51): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 18:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:48:02 --> ErrorException: Undefined variable $order_code
+in APPPATH\Controllers\OrderController.php on line 49.
+ 1 APPPATH\Controllers\OrderController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_code', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Controllers\\OrderController.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 18:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:48:28 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\OrderController.php(51): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 18:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:48:59 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\OrderController.php(51): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 18:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:49:49 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\OrderController.php(51): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 18:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:52:13 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(Object(stdClass), null)
+ 4 APPPATH\Controllers\OrderController.php(54): CodeIgniter\Model->update(Object(stdClass))
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 19:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 19:02:08 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(Object(stdClass), null)
+ 4 APPPATH\Controllers\OrderController.php(54): CodeIgniter\Model->update(Object(stdClass))
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 19:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 19:03:06 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\OrderController.php(66): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 19:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 19:03:49 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\OrderController.php(66): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->mark_as_delivered('kl9ZAVtYN2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-06-16 19:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,816 @@
+INFO - 2024-05-15 15:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 15:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 15:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 16:02:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`order...' at line 1 in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, COUNT...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\OrderController->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-15 16:02:08 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`order...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions`.`deliveryRegion` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:02:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`order...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions`.`deliveryRegion` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions`.`deliveryRegion` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions`.`deliveryRegion` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:02:08 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`order...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions`.`deliveryRegion` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions`.`deliveryRegion` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions`.`deliveryRegion` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions`.`deliveryRegion` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+ERROR - 2024-05-15 16:02:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`order...' at line 1 in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, COUNT...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\OrderController->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-15 16:02:52 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`order...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:02:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`order...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:02:52 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`order...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT(order_log.orderCode as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+ERROR - 2024-05-15 16:03:28 --> mysqli_sql_exception: Table 'lilsite.order_log' doesn't exist in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, COUNT...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\OrderController->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-15 16:03:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'lilsite.order_log' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:03:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'lilsite.order_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:03:28 --> [Caused by] mysqli_sql_exception: Table 'lilsite.order_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+ERROR - 2024-05-15 16:06:09 --> mysqli_sql_exception: Table 'lilsite.order_log' doesn't exist in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `custome...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\OrderController->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-15 16:06:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'lilsite.order_log' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:06:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'lilsite.order_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:06:09 --> [Caused by] mysqli_sql_exception: Table 'lilsite.order_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+ERROR - 2024-05-15 16:07:45 --> mysqli_sql_exception: Table 'lilsite.order_log' doesn't exist in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `custome...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\OrderController->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-15 16:07:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'lilsite.order_log' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:07:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'lilsite.order_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:07:45 --> [Caused by] mysqli_sql_exception: Table 'lilsite.order_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order_log.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order_log` ON `order_log`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionId`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-15 16:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 16:15:18 --> mysqli_sql_exception: Unknown column 'delivery_regions.deliveryRegion' in 'on clause' in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `custome...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\OrderController->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-15 16:15:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_regions.deliveryRegion' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`deliveryRegion`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:15:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_regions.deliveryRegion' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`deliveryRegion`
+GROUP BY `customer_table`.`orderCode`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`deliveryRegion`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`deliveryRegion`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 16:15:18 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery_regions.deliveryRegion' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`deliveryRegion`
+GROUP BY `customer_table`.`orderCode`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`deliveryRegion`
+GROUP BY `customer_table`.`orderCode`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`deliveryRegion`
+GROUP BY `customer_table`.`orderCode`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`deliveryRegion`
+GROUP BY `customer_table`.`orderCode`', [], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OrderController.php(36): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-15 16:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 16:38:54 --> ErrorException: Undefined property: stdClass::$orderData
+in APPPATH\Views\admin\orders.php on line 25.
+ 1 APPPATH\Views\admin\orders.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$orderData', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orders.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orders.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/orders', [], true)
+ 5 APPPATH\Controllers\OrderController.php(41): view('admin/orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-15 16:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 17:01:39 --> mysqli_sql_exception: Unknown column 'products_table.productId' in 'on clause' in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `custome...', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\OrderController.php(58): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\OrderController->view_order_detail('9T8PwOl638')
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2024-05-15 17:01:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'products_table.productId' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `products_table` ON `products_table`.`productId` = `order`.`Id`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `order`.`orderCode` = :order.orderCode:', [...], false)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\OrderController.php(58): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->view_order_detail('9T8PwOl638')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 17:01:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'products_table.productId' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `products_table` ON `products_table`.`productId` = `order`.`Id`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `order`.`orderCode` = \'9T8PwOl638\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `products_table` ON `products_table`.`productId` = `order`.`Id`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `order`.`orderCode` = \'9T8PwOl638\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `products_table` ON `products_table`.`productId` = `order`.`Id`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `order`.`orderCode` = :order.orderCode:', [...], false)
+ 4 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\OrderController.php(58): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->view_order_detail('9T8PwOl638')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 17:01:39 --> [Caused by] mysqli_sql_exception: Unknown column 'products_table.productId' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `products_table` ON `products_table`.`productId` = `order`.`Id`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `order`.`orderCode` = \'9T8PwOl638\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `products_table` ON `products_table`.`productId` = `order`.`Id`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `order`.`orderCode` = \'9T8PwOl638\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `products_table` ON `products_table`.`productId` = `order`.`Id`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `order`.`orderCode` = \'9T8PwOl638\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `customer_table`.*, COUNT(order.orderCode) as total_ordered
+FROM `customer_table`
+JOIN `order` ON `order`.`orderCode` = `customer_table`.`orderCode`
+JOIN `products_table` ON `products_table`.`productId` = `order`.`Id`
+JOIN `delivery_regions` ON `customer_table`.`deliveryRegion` = `delivery_regions`.`regionName`
+WHERE `order`.`orderCode` = :order.orderCode:', [...], false)
+ 5 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\OrderController.php(58): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->view_order_detail('9T8PwOl638')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-15 17:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 17:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 17:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 17:09:03 --> ErrorException: Attempt to read property "fullName" on array
+in APPPATH\Views\admin\orde_details.php on line 18.
+ 1 APPPATH\Views\admin\orde_details.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullName" on array', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orde_details.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orde_details.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/orde_details', [], true)
+ 5 APPPATH\Controllers\OrderController.php(61): view('admin/orde_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->view_order_detail('9T8PwOl638')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+CRITICAL - 2024-05-15 17:09:24 --> ErrorException: Undefined array key "fullName"
+in APPPATH\Views\admin\orde_details.php on line 18.
+ 1 APPPATH\Views\admin\orde_details.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fullName"', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orde_details.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\admin\\orde_details.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/orde_details', [], true)
+ 5 APPPATH\Controllers\OrderController.php(61): view('admin/orde_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->view_order_detail('9T8PwOl638')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-15 17:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 17:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 17:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 17:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 17:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 16:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 18:48:30 --> ErrorException: Undefined array key "prodId"
+in APPPATH\Views\public\cart.php on line 45.
+ 1 APPPATH\Views\public\cart.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prodId"', 'C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\cart.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('public/cart', [], true)
+ 5 APPPATH\Controllers\OrderController.php(135): view('public/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\OrderController->view_cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-15 18:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 18:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 19:34:18 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\public\common\product_loader.php on line 6.
+ 1 APPPATH\Views\public\index.php(172): include_once()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\app\\Views\\public\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('public/index', [], true)
+ 5 APPPATH\Controllers\Home.php(41): view('public/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-15 19:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 19:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 23:46:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'lilsite', 3306, '', 0)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\Home.php(22): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\User\Desktop\codeigniterprojects\lilapp\app\Controllers\Home.php(22): CodeIgniter\Model->__call('get', Array)
+#5 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#6 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Desktop\codeigniterprojects\lilapp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Desktop\codeigniterprojects\lilapp\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#10 {main}
+CRITICAL - 2024-05-15 23:46:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products_table`
+JOIN `categories` ON `categories`.`categoryId` = `products_table`.`prodCategory`
+WHERE `products_table`.`prodAvailabilityStatus` = :products_table.prodAvailabilityStatus:
+ORDER BY `products_table`.`prodId` DESC
+ LIMIT 9', [...], false)
+ 3 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(22): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Desktop\\codeigniterprojects\\lilapp\\public\\index.php')
+INFO - 2024-05-15 23:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
